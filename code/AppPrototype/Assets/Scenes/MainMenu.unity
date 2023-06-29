@@ -592,7 +592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3584002438622786950, guid: 4e787137e04dd0847b3bf3102de5afa4, type: 3}
       propertyPath: m_text
-      value: Directive
+      value: Activities
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -851,7 +851,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 98, y: -90.5}
+  m_AnchoredPosition: {x: 79.655, y: -80.155}
   m_SizeDelta: {x: 159.30902, y: 160.30902}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1466569479
