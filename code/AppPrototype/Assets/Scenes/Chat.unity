@@ -416,6 +416,7 @@ GameObject:
   - component: {fileID: 666272437}
   - component: {fileID: 666272436}
   - component: {fileID: 666272435}
+  - component: {fileID: 666272439}
   m_Layer: 5
   m_Name: InputField (TMP)
   m_TagString: Untagged
@@ -519,7 +520,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 666272439}
+        m_TargetAssemblyTypeName: TextInput, Assembly-CSharp
+        m_MethodName: sendChat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -606,6 +619,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666272433}
   m_CullTransparentMesh: 1
+--- !u!114 &666272439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666272433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fba724b08e160848ad71b0a28864dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chatView: {fileID: 884624524}
 --- !u!1001 &702168951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -813,8 +839,9 @@ GameObject:
   - component: {fileID: 884624528}
   - component: {fileID: 884624527}
   - component: {fileID: 884624526}
+  - component: {fileID: 884624529}
   m_Layer: 5
-  m_Name: Scroll View (1)
+  m_Name: Chat View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -909,6 +936,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884624524}
   m_CullTransparentMesh: 1
+--- !u!114 &884624529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884624524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43107beea461d6c4db343a49d2a459ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botPrefab: {fileID: 7317350214662718495, guid: 680bbaf3cda573f47af60762a067f0b1, type: 3}
+  userPrefab: {fileID: 7659108651864346164, guid: e6f8ea5e3c6cb6248996499bbad52c49, type: 3}
 --- !u!1 &1268452403
 GameObject:
   m_ObjectHideFlags: 0
