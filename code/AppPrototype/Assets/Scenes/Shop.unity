@@ -3137,6 +3137,42 @@ PrefabInstance:
       value: Equip
       objectReference: {fileID: 0}
     - target: {fileID: 4295140032813600877, guid: 4e787137e04dd0847b3bf3102de5afa4, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.21176472
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295140032813600877, guid: 4e787137e04dd0847b3bf3102de5afa4, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.3372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295140032813600877, guid: 4e787137e04dd0847b3bf3102de5afa4, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.14901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295140032813600877, guid: 4e787137e04dd0847b3bf3102de5afa4, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.5764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295140032813600877, guid: 4e787137e04dd0847b3bf3102de5afa4, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.82745105
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295140032813600877, guid: 4e787137e04dd0847b3bf3102de5afa4, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.16862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295140032813600877, guid: 4e787137e04dd0847b3bf3102de5afa4, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.5764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295140032813600877, guid: 4e787137e04dd0847b3bf3102de5afa4, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.82745105
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295140032813600877, guid: 4e787137e04dd0847b3bf3102de5afa4, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.16862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295140032813600877, guid: 4e787137e04dd0847b3bf3102de5afa4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1869687243}
