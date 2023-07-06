@@ -10,6 +10,7 @@ public class ButtonScript : MonoBehaviour
     // Start is called before the first frame update
     public void onClick()
     {
+        Debug.Log("Loading: " + targetSceneName);
         SceneManager.LoadScene(targetSceneName);
     }
 }
