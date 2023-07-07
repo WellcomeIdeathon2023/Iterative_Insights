@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +18,11 @@ public class ChatScript : MonoBehaviour
         newChat.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = chat;
 
         newChat.transform.GetChild(0).GetComponent<ContentSizeFitter>().SetLayoutVertical();
+
+        if (chat == "...yes")
+        {
+            StartCoroutine(addScript());
+        }
     }
 
 
@@ -23,6 +30,15 @@ public class ChatScript : MonoBehaviour
     {
         StartCoroutine(addText(chat));
     }
+
+
+    IEnumerator addScript()
+    {
+        yield return StartCoroutine(addText(botMessages[0]));
+        yield return StartCoroutine(addText(botMessages[1]));
+    }
+
+
 
     float timeBetweenWords = 0.08f;
     IEnumerator addText(string text)
@@ -35,16 +51,18 @@ public class ChatScript : MonoBehaviour
             textBox.GetComponentInChildren<TMPro.TextMeshProUGUI>().text += token + " ";
             yield return new WaitForSeconds(timeBetweenWords + Random.Range(-timeBetweenWords, timeBetweenWords));
         }
+
+        textBox.GetComponent<ContentSizeFitter>().SetLayoutVertical();
+        textBox.transform.GetChild(0).GetComponent<ContentSizeFitter>().SetLayoutVertical();
+        textBox.transform.GetChild(0).GetChild(0).GetComponent<ContentSizeFitter>().SetLayoutVertical();
+        textBox.transform.GetChild(0).GetChild(0).GetChild(1).GetComponent<ContentSizeFitter>().SetLayoutVertical();
+
     }
 
-    string botText = "Hello, I am a bot. I am here to help you with your problems. What is your name?";
-
-    private void Update()
+    string[] botMessages =
     {
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            addBotChat(botText);
-        }
-    }
+        "Chatbot: I am so sorry you are feeling that way, I will alert those that you have noted down as permitted to support you",
+        "Remember you can also always call ‘+0123467899’ to get immediate emergency support"
+    };
 
 }
