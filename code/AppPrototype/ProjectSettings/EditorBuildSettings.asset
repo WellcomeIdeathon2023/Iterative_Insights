@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop.unity
     guid: 7d58213e0f6becf468eaa0f08d0580bb
+  - enabled: 1
+    path: Assets/Scenes/Insights.unity
+    guid: 41ed0634a37ad6044a0152a6fdc04e77
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
